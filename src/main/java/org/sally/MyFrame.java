@@ -15,12 +15,13 @@ public class MyFrame extends JFrame {
 
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
         this.setIconImage(image.getImage());
-        this.getContentPane().setBackground(new Color(0, 0, 0));
+        this.getContentPane().setBackground(new Color(161, 51, 51));
         this.setResizable(true);
         this.setTitle("GUI");
-        this.setLayout(null);
+       // this.setLayout(null);
         this.setVisible(true);
-        this.setSize(1280   , 720);
+       // this.setSize(1280   , 720);
+        this.pack(); //automatically sets window size to accommodate elements
 
 
 
