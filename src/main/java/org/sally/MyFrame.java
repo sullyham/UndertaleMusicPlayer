@@ -3,6 +3,7 @@ package org.sally;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.desktop.SystemEventListener;
 
 public class MyFrame extends JFrame {
     public MyFrame() {
@@ -17,6 +18,7 @@ public class MyFrame extends JFrame {
         this.add(panel);
         this.add(bluePanel);
         this.add(greenPanel);
+        greenPanel.add(label);
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(255, 255, 255));
