@@ -20,7 +20,7 @@ public class MyLabel extends JLabel {
         this.setOpaque(true);
         this.setVerticalAlignment(JLabel.CENTER);
         this.setHorizontalAlignment(JLabel.CENTER);
-       // this.setBounds(350,150,500 ,500); not needed if you use frame.pack() automatically does
+        this.setBounds(350,150,500 ,500); //not needed if you use frame.pack() automatically does
     }
 
 }
