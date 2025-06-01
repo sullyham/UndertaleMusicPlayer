@@ -9,10 +9,10 @@ public class MyFrame extends JFrame {
         ImageIcon image = new ImageIcon("gameimage.png");
 
        MyLabel label = new MyLabel();
-       LabelTwo labelTwo = new LabelTwo();
+
 
         this.add(label);
-        this.add(labelTwo);
+
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(0, 0, 0));
