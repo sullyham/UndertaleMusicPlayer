@@ -8,7 +8,7 @@ public class MyLabel extends JLabel {
     public MyLabel(){
         Border border = BorderFactory.createLineBorder(Color.red, 3);
         ImageIcon image2 = new ImageIcon("cursed.jpeg");
-        this.setText("Bros using github");
+        this.setText("I'm accessing this shit on linux!");
         this.setHorizontalTextPosition(this.CENTER);
         this.setVerticalTextPosition(this.TOP);
         this.setIconTextGap(-75);
