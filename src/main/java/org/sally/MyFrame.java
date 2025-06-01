@@ -9,16 +9,9 @@ public class MyFrame extends JFrame {
     public MyFrame() {
         ImageIcon image = new ImageIcon("gameimage.png");
 
-       MyLabel label = new MyLabel();
-       OrangePanel panel = new OrangePanel();
-       BluePanel bluePanel = new BluePanel();
-       GreenPanel greenPanel = new GreenPanel();
 
-       // this.add(label);
-        this.add(panel);
-        this.add(bluePanel);
-        this.add(greenPanel);
-        greenPanel.add(label);
+
+
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(255, 255, 255));
