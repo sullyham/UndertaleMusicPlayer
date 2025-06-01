@@ -20,7 +20,7 @@ public class MyFrame extends JFrame {
         this.setTitle("GUI");
         this.setLayout(null);
         this.setVisible(true);
-        this.setSize(1220   , 1220);
+        this.setSize(1920   , 1080);
 
 
 
