@@ -9,6 +9,7 @@ public class MyFrame extends JFrame {
     public MyFrame() {
         ImageIcon image = new ImageIcon("heart.png");
         J text = new J();
+        Buttons button = new Buttons();
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); //exits program on close
         this.setIconImage(image.getImage()); //sets program icon
         this.getContentPane().setBackground(new Color(0, 0, 0)); //background of frame
@@ -18,6 +19,7 @@ public class MyFrame extends JFrame {
         this.setVisible(true);
         this.setSize(660   , 520); //resolution
         this.add(text);
+        this.add(button);
        //this.pack(); //automatically sets window size to accommodate elements
 
 
