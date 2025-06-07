@@ -9,16 +9,17 @@ public class MyFrame extends JFrame {
     J text = new J();
     Forward button3 = new Forward();
     Backwards button4 = new Backwards();
+    static JLabel asr;
     public MyFrame() {
         button.setPlay(button2);
         button2.setPause(button);
 
         ImageIcon image = new ImageIcon("heart.png");
         ImageIcon ad = new ImageIcon("ad.png");
-        JLabel asr = new JLabel();
+        asr = new JLabel();
         asr.setIcon(ad);
         this.add(asr);
-        asr.setBounds(500,200,150,250);
+        asr.setBounds(300,300,300,300);
 
         button2.setVisible(false);
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); //exits program on close
@@ -28,7 +29,7 @@ public class MyFrame extends JFrame {
         this.setTitle("UNDERTALE");
        this.setLayout(null); //choose layout mngrs
         this.setVisible(true);
-        this.setSize(660   , 520); //resolution
+        this.setSize(700   , 620); //resolution
         this.add(text);
         this.add(button);
         this.add(button2);

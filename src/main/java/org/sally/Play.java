@@ -22,7 +22,7 @@ public class Play  extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==this){
             this.setVisible(false);
-            Music.PlayMusic("Hopes and Dreams.wav");
+            Music.PlayMusic(Main.q.peek().toString());
             pause.setVisible(true);
         }
     }

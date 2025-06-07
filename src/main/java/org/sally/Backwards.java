@@ -20,6 +20,10 @@ public class Backwards extends JButton implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        String old = Main.q.poll().toString();
+        Music.PauseMusic();
+        Music.PlayMusic(Main.q.peek().toString());
+        J.setLabel();
+        Main.q.add(old);
     }
 }
