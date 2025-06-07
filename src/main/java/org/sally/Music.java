@@ -6,12 +6,14 @@ import javax.sound.sampled.Clip;
 import java.io.File;
 
 public class Music {
+    static AudioInputStream audioinput;
+    static Clip clip;
     public static void PlayMusic(String location){
         try{
             File musicPath = new File(location);
             if(musicPath.exists()){
-                AudioInputStream audioinput = AudioSystem.getAudioInputStream(musicPath);
-                Clip clip = AudioSystem.getClip();
+                audioinput = AudioSystem.getAudioInputStream(musicPath);
+                clip = AudioSystem.getClip();
                 clip.open(audioinput);
                 clip.loop(Clip.LOOP_CONTINUOUSLY);
             }
@@ -21,5 +23,8 @@ public class Music {
         } catch (Exception e) {
             System.out.println(e);
         }
+    }
+    public static void PauseMusic(){
+        clip.stop();
     }
 }
