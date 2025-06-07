@@ -7,6 +7,8 @@ public class MyFrame extends JFrame {
     Pause button = new Pause();
     Play button2 = new Play();
     J text = new J();
+    Forward button3 = new Forward();
+    Backwards button4 = new Backwards();
     public MyFrame() {
         button.setPlay(button2);
         button2.setPause(button);
@@ -30,6 +32,9 @@ public class MyFrame extends JFrame {
         this.add(text);
         this.add(button);
         this.add(button2);
+        this.add(button3);
+        this.add(button4);
+
        //this.pack(); //automatically sets window size to accommodate elements
 
 
