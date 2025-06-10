@@ -21,7 +21,7 @@ public class Main {
         q.add("Heartache.wav");
         q.add("MEGALOVANIA.wav");
         q.add("Power of NEO.wav");
-
+        q.add("4U.wav");
 
        new MyFrame();
        Music.PlayMusic(q.peek().toString());

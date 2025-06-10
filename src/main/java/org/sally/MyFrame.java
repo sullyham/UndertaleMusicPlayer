@@ -7,6 +7,7 @@ public class MyFrame extends JFrame {
     Pause button = new Pause();
     Play button2 = new Play();
     J text = new J();
+    DropDownMenu menu = new DropDownMenu();
     Forward button3 = new Forward();
     Backwards button4 = new Backwards();
     static JLabel asr;
@@ -35,6 +36,7 @@ public class MyFrame extends JFrame {
         this.add(button2);
         this.add(button3);
         this.add(button4);
+        this.add(menu);
 
        //this.pack(); //automatically sets window size to accommodate elements
 
