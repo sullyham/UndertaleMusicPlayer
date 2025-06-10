@@ -18,11 +18,13 @@ public class Forward extends JButton implements ActionListener {
 
 
     @Override
+    //WORKS!!!!
     public void actionPerformed(ActionEvent e) {
         String old = Main.q.poll().toString();
+        Main.q.addLast(old);
         Music.PauseMusic();
         Music.PlayMusic(Main.q.peek().toString());
         J.setLabel();
-        Main.q.add(old);
+
     }
 }

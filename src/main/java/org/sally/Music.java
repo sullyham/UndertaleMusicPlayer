@@ -15,6 +15,8 @@ public class Music {
         try{
             File musicPath = new File(location);
             if(musicPath.exists()){
+                System.out.println("NOW PLAYING " + location);
+                System.out.println("queue order is "+ Main.q.toString());
                 audioinput = AudioSystem.getAudioInputStream(musicPath);
                 clip = AudioSystem.getClip();
                 clip.open(audioinput);

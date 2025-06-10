@@ -20,10 +20,16 @@ public class Backwards extends JButton implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String old = Main.q.poll().toString();
+        //Basically we need to get the last item in the queue
+        // Get last item
+        //Put it in front while deleting it from the back
+        //Then play whatever is in the front
+
+        String curr = Main.q.getLast(); // gets last element
+        Main.q.remove(curr); //deletes it from the back
+        Main.q.addFirst(curr); //adds it to the front
         Music.PauseMusic();
-        Music.PlayMusic(Main.q.peek().toString());
+        Music.PlayMusic(Main.q.getFirst());
         J.setLabel();
-        Main.q.add(old);
     }
 }
